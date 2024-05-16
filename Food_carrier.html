@@ -1,0 +1,140 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim</title>
+</head>
+<body>
+    <form>
+        <section id="Food_carrier">
+            <div class="claim-card">
+                <h2>Food carrier</h2>
+                <label for="Name">Enter name:</label>
+                <input type="text" id="Name" name="Name"><br>
+                <label for="location">Enter current location:</label>
+                <input type="text" id="location" name="location"><br>
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt">
+            </div>
+        </section>
+    </form>
+</body>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Order Form</title>
+<style>
+  body {
+    background-color: rgb(204, 212, 218);
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .form-container {
+    background-color: white;
+    max-width: 400px;
+    padding: 50px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="time"],
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  .btn-submit {
+    background-color: rgb(75, 107, 169) ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn-submit:hover {
+    background-color:rgb(204, 212, 218);
+    color: black;
+  }
+
+  .image-container img {
+    max-width: 700px;
+    height: 500px; 
+  }
+
+  .quote_carrier {
+    font-size: 18px;
+    color:rgb(11, 11, 96);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="form-container">
+    <h2>Food Carrier Form</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  
+  <div class="image-container">
+    <img src="food carrier.png" alt="Image description">
+  </div>
+</div>
+
+<div class="quote_carrier">
+    <h1>In the act of giving, we rediscover the joy of serving others with love and empathy.</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim</title>
+</head>
+<body>
+    <form>
+        <section id="Food_consumer">
+            <div class="claim-card">
+                <h2>Food consumer</h2>
+                <label for="Name">Enter name:</label>
+                <input type="text" id="Name" name="Name"><br>
+                <label for="quantity">Enter quantity of food(number of people):</label>
+                <input type="number" id="quantity" name="quantity"><br>
+                <input type="checkbox" id="veg" name="veg" value="VEG">
+                <label for="veg">VEG</label><br>
+                <input type="checkbox" id="non-veg" name="non-veg" value="NON-VEG">
+                <label for="non-veg">NON-VEG</label><br>
+                <label for="Adds">Enter address:</label>
+                <input type="textarea" id="Adds" name="Adds">
+            </div>
+        </section>
+    </form>
+</body>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Order Form</title>
+<style>
+  body {
+    background-color: rgb(204, 212, 218);
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .form-container {
+    background-color: white;
+    max-width: 400px;
+    padding: 50px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="checkbox"],
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .form-group input[type="checkbox"] {
+    width: auto;
+  }
+
+  .form-group.checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+
+  .btn-submit {
+    background-color: rgb(75, 107, 169) ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn-submit:hover {
+    background-color:rgb(204, 212, 218);
+    color: black;
+  }
+
+  .image-container img {
+    max-width: 700px;
+    height: 500px; 
+  }
+
+  .quote_consumer {
+    font-size: 18px;
+    color: rgb(11, 11, 96);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-container">
+    <img src="Food consumer.jpg" alt="Image description">
+  </div>
+
+  <div class="form-container">
+    <h2>Food Consumer Form</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity of Food:</label>
+        <input type="number" id="quantity" name="quantity" required>
+      </div>
+      <div class="form-group checkbox-group">
+        <label>Food Type:</label>
+        <input type="checkbox" id="veg" name="food_type[]" value="veg">
+        <label for="veg">Veg</label>
+        <input type="checkbox" id="non-veg" name="food_type[]" value="non-veg">
+        <label for="non-veg">Non-Veg</label>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="quote_consumer">
+    <h1>A single donation can create a ripple effect, inspiring others to embrace generosity.</h1>
+</div>
+</body>
+</html>

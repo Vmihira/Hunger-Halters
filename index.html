@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger Halters</title>
+
+    <style>
+        body {
+            font-family: Verdana, Tahoma, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(204, 212, 218);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            font-size: 30px;
+            padding: 20px;
+            text-align:left;
+        }
+
+        nav {
+            background-color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        nav a {
+            text-decoration: none;
+            color:rgb(75, 107, 169) ;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 7px;
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        nav a:hover {
+            background-color:cornflowerblue ;
+            color: white;
+        }
+
+        p {
+            font-size: large;
+            color:crimson;
+        }
+        h3 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .about_container {
+            padding: 20px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5px;
+        }
+        .img1 {
+            max-width: 80%;
+            box-shadow: 0 0 20px;
+            max-height: 80%;
+        }
+        .text {
+            text-align: center;
+        }
+        .cta-button {
+            font-size: 18px;
+            text-align: center;
+            font-weight:300;
+            text-decoration: none;
+            background-color: white;
+            padding: 10px;
+            margin: 650px;
+            border-radius: 7px;
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        .cta-button:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        /*.image {
+            margin: 600px;
+            max-width: 100%;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px;
+            margin-top: 30px;
+            margin-bottom: auto;
+        }*/
+
+        .service-container {
+            text-align: center;
+            display: flex;
+            justify-content:space-around;
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+        .service-icon {
+            font-size: 4em;
+        }
+        .service-card {
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .claim-container {
+            background-image: url(do_not_waste_food.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+            margin: 50px;
+            margin-right: 100px;
+            padding: 0px;
+            background-size: 400px;
+            text-align: left;
+        }
+        .cta-button2 {
+            text-align: right;
+            font-weight:300;
+            text-decoration: none;
+            background-color: white;
+            padding: 15px;
+            margin: 75px;
+            border-radius: 7px;
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        .cta-button2:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hunger Halters</h1>
+    </header>
+
+    <nav>
+        <a href="kukbit_login_registration_form.html" target="_blank">Login / SignUp</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#claim">Claim</a>
+        <a href="Food_donar.html" target="_blank"></a>
+        <a href="Food_carrier.html" target="_blank"></a>
+        <a href="Food_consumer.html" target="_blank"></a>
+    </nav>
+
+    <section id="about">
+        <div class="about_container">
+            <div class="image">
+                <img src="hunger halters.jpg" alt="Hunger Haulters" class="img1">
+            </div>
+            <div class="text">
+                <p>If you are a food donar...</p>
+                <p>if you are a person in search of food...</p>
+                <p>If you are someone who could collect food from the donar and supply to the poor...</p>
+                <h3>This is the perfect platform for you !!!</h3>
+            </div>
+        </div>
+        <div class="explore">
+            <a href="#services" class="cta-button">Explore Our Services</a><br><br><br><br>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>OUR SERVICES</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <div class="service-icon">&#128172;</div><br>
+                <p>We provide the food donars a site to make the consumers aware about the food being donated</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">&#128757;</div><br>
+                <p>We help the food carriers know who is actually donating the food and to whom</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">&#127858;</div>
+                <p>We help the needy to notify their location and their requirement in this site</p>
+            </div>
+        </div>
+        <p></p>
+    </section>
+<!--
+    <section id="claim">
+        <div class="claim-container">
+            <form>
+                <div class="claim-card">
+                    <h2>Food Donar</h2>
+                    <label for="Name">Enter name:</label>
+                    <input type="text" id="Name" name="Name"><br>
+                    <label for="quantity">Enter quantity of food(number of people):</label>
+                    <input type="number" id="quantity" name="quantity"><br>
+                    <input type="checkbox" id="veg" name="veg" value="VEG">
+                    <label for="veg">VEG</label><br>
+                    <input type="checkbox" id="non-veg" name="non-veg" value="NON-VEG">
+                    <label for="non-veg">NON-VEG</label><br>
+                    <label for="Adds">Enter address:</label>
+                    <input type="textarea" id="Adds" name="Adds">
+                </div>
+                <div class="claim-card">
+                    <h2>Food carrier</h2>
+                    <label for="Name">Enter name:</label>
+                    <input type="text" id="Name" name="Name"><br>
+                    <label for="location">Enter current location:</label>
+                    <input type="text" id="location" name="location"><br>
+                    <label for="appt">Select a time:</label>
+                    <input type="time" id="appt" name="appt">
+                </div>
+                <div class="claim-card">
+                    <h2>Food consumer</h2>
+                    <label for="Name">Enter name:</label>
+                    <input type="text" id="Name" name="Name"><br>
+                    <label for="quantity">Enter quantity of food(number of people):</label>
+                    <input type="number" id="quantity" name="quantity"><br>
+                    <input type="checkbox" id="veg" name="veg" value="VEG">
+                    <label for="veg">VEG</label><br>
+                    <input type="checkbox" id="non-veg" name="non-veg" value="NON-VEG">
+                    <label for="non-veg">NON-VEG</label><br>
+                    <label for="Adds">Enter address:</label>
+                    <input type="textarea" id="Adds" name="Adds">
+                </div>
+            </form>
+        </div>
+    </section>
+-->
+
+    <section id="claim">
+        <h2 style="color: black; text-align: center;">CLAIM</h2><br>
+        <div class="claim-container">
+            <div class="text_buttons">
+                <h1>Are you a Food Donar...&#128172;<a href="Food_donar.html" class="cta-button2">Food Donar</a></h1>
+                <br><br><br><br>
+                <h1>Can you transfer the Food...&#128757;<a href="Food_carrier.html" class="cta-button2">Food Carrier</a></h1>
+                <br><br><br><br>
+                <h1>Will you have some food...&#127858;<a href="Food_consumer.html" class="cta-button2">Food Consumer</a></h1>
+                <br><br><br><br>
+            </div>
+        </div>     
+    </section>
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>

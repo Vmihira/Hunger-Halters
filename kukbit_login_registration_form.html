@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name ="viewport" content = "width=device-width,initial-scale=1.0">
+    <title>Login or Registration Form</title>
+    <link rel="stylesheet" href="kukbit_login_registration_form.css">
+    <script src="https://kit.fontawesome.com/211a202798.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form_box">
+            <h1 id="title">Sign Up</h1>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <div class="input_group">
+                    <div class="input_field" id="namefield">
+                        <i class="fa-regular fa-user"></i>
+                        <label for="firstName"></label>
+                        <input type="text" id="firstName" placeholder="Name" name="firstName">
+                    </div>
+                    <div class="input_field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="input_field">
+                        <i class="fa-solid fa-lock"></i>
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="input_field" id="passwordfield">
+                        <i class="fa-solid fa-lock"></i>
+                        <label for="confirmPassword"></label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword">
+                    </div>
+                </div>
+                <p class="error" id="password-error-message"></p>
+                <button type="submit">Register</button>
+                <div class="btn_field">
+                    <button type="button" id="signupbtn">Sign Up</button>
+                    <button type="button" class="disable" id="signinbtn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+
+        var signinbtn = document.getElementById('signinbtn');
+        var signupbtn = document.getElementById('signupbtn');
+        var namefield = document.getElementById('namefield');
+        var confirmPassword = document.getElementById('passwordfield');
+        var title = document.getElementById('title');
+        var passwordErrorMessage = document.getElementById('password-error-message');
+
+function validateForm() {
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        passwordErrorMessage.innerHTML = '';
+
+        if (password !== confirmPassword) {
+            passwordErrorMessage.innerHTML = 'Passwords do not match';
+            return false;
+        }
+
+        return true; 
+    }
+
+        signinbtn.onclick = function() {
+            namefield.style.maxHeight = "0";
+            passwordfield.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupbtn.classList.add("disable");
+            signinbtn.classList.remove("disable");
+            passwordErrorMessage.remove("disable")
+        }
+        signupbtn.onclick = function() {
+            namefield.style.maxHeight = "60px";
+            passwordfield.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupbtn.classList.remove("disable");
+            signinbtn.classList.add("disable");
+        }
+    </script>
+</body>
+</html>
